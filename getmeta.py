@@ -42,7 +42,9 @@ print("\n【要旨】")
 print("原文:", abstract)
 print("JA:", abstract_ja)
 
-f = open(dt_now.strftime("%Y-%m-%d-%H-%M-%S")+".txt", "w",encoding="utf-8")
+file_path = "output/" + dt_now.strftime("%Y-%m-%d-%H-%M-%S")+".txt"
+
+f = open(file_path, "w",encoding="utf-8")
 print("【タイトル】",file=f)
 print("原文:", title,file=f)
 print("JA:", title_ja,file=f)
